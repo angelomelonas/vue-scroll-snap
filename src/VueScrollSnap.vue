@@ -1,5 +1,5 @@
 <template>
-    <div class="container" :class="{'full': full, 'horizontal': horizontal }">
+    <div class="snap-container" :class="{'full': full, 'horizontal': horizontal }">
         <slot></slot>
     </div>
 </template>
@@ -23,7 +23,7 @@
 </script>
 
 <style>
-    .container {
+    .snap-container {
         display: block;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
@@ -33,7 +33,7 @@
         scroll-snap-type: mandatory;
     }
 
-    .container.horizontal {
+    .snap-container.horizontal {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -43,7 +43,7 @@
         scroll-snap-type: x mandatory;
     }
 
-    .container.full {
+    .snap-container.full {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -60,17 +60,17 @@
         scroll-snap-align: start;
     }
 
-    .container.full > .item {
+    .snap-container.full > .item {
         min-width: 100%;
         min-height: 100%;
         flex: 1;
     }
 
-    .container.horizontal > .item {
+    .snap-container.horizontal > .item {
         scroll-snap-align: center;
     }
 
-    .container.full.horizontal > .item {
+    .snap-container.full.horizontal > .item {
         scroll-snap-align: center;
         min-width: 100%;
         flex: 1;
