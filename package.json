@@ -1,5 +1,5 @@
 {
-  "name": "VueScrollSnap",
+  "name": "vue-scroll-snap",
   "description": "A simple Vue.js component for fullscreen",
   "version": "0.1.0",
   "main": "src/VueScrollSnap.vue",
