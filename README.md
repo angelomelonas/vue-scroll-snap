@@ -1,6 +1,8 @@
 # Vue Scroll Snap
 
-TODO: Description
+A super simple Vue component that allows fullscreen and horizontal scroll snapping.
+
+[![NPM](https://nodei.co/npm/vue-scroll-snap.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-scroll-snap/)
 
 ## Installation
 
