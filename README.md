@@ -13,17 +13,16 @@ A super simple Vue component that allows both fullscreen and horizontal scroll s
 
 ## Usage
 
-There are three ways of using Vue Scroll Snap. They are outlined below.
+There are four ways of using Vue Scroll Snap. They are described below. For more a more detailed description, see the `example` directory.
 
-### Basic Component
+### Vertical 
 
 ```vue
 <template>
   <vue-scroll-snap>
-    <div class="item" id="one"></div>
-    <div class="item" id="two"></div>
-    <div class="item" id="three"></div>
-    <div class="item" id="four"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    ...
   </vue-scroll-snap>
 </template>
 
@@ -38,7 +37,7 @@ There are three ways of using Vue Scroll Snap. They are outlined below.
 <style>
 
   .item {
-    /* Set the minimum height of the items to be the same as the height of the container.*/
+    /* Set the minimum height of the items to be the same as the height of the scroll-snap-container.*/
     min-height: 500px;
   }
 
@@ -46,147 +45,54 @@ There are three ways of using Vue Scroll Snap. They are outlined below.
     height: 500px;
     width: 500px;
   }
-
-  #one {
-    background: #ecf0f1;
-  }
-
-  #two {
-    background: #2980b9;
-  }
-
-  #three {
-    background: #8e44ad;
-  }
-
-  #four {
-    background: #e74c3c;
-  }
 </style>
 ```
 
-### Fullscreen
+### Horizontal 
+
+```vue
+<template>
+  <vue-scroll-snap :horizontal="true">
+    ...
+  </vue-scroll-snap>    
+</template>
+
+<script>...</script>
+
+<style>
+
+  .item {
+    /* Set the minimum width of the items to be the same as the width of the scroll-snap-container.*/
+    min-width: 500px;
+  }
+
+  .scroll-snap-container {...}
+</style>
+```
+
+### Fullscreen Vertical
 
 ```vue
 <template>
   <vue-scroll-snap :fullscreen="true">
-    <div class="item" id="one"></div>
-    <div class="item" id="two"></div>
-    <div class="item" id="three"></div>
-    <div class="item" id="four"></div>
+    ...
   </vue-scroll-snap>
 </template>
 
-<script>
-  import VueScrollSnap from "vue-scroll-snap";
-
-  export default {
-    components: {VueScrollSnap},
-  };
-</script>
-
-<style>
-  #one {
-    background: #ecf0f1;
-  }
-
-  #two {
-    background: #2980b9;
-  }
-
-  #three {
-    background: #8e44ad;
-  }
-
-  #four {
-    background: #e74c3c;
-  }
-</style>
-```
-
-### Horizontal
-```vue
-<template>
-  <vue-scroll-snap :horizontal="true">
-    <div class="item" id="one"></div>
-    <div class="item" id="two"></div>
-    <div class="item" id="three"></div>
-    <div class="item" id="four"></div>
-  </vue-scroll-snap>
-</template>
-
-<script>
-  import VueScrollSnap from "vue-scroll-snap";
-
-  export default {
-    components: {VueScrollSnap},
-  };
-</script>
-
-<style>
-  .item {
-    /* Set the minimum width of the items to be the same as the height of the container.*/
-    min-width: 500px;
-  }
-
-  .scroll-snap-container {
-    height: 500px;
-  }
-  
-  #one {
-    background: #ecf0f1;
-  }
-
-  #two {
-    background: #2980b9;
-  }
-
-  #three {
-    background: #8e44ad;
-  }
-
-  #four {
-    background: #e74c3c;
-  }
-</style>
+<script>...</script>
+<style>/* No styling required. */</style>
 ```
 
 ### Fullscreen Horizontal
 ```vue
 <template>
   <vue-scroll-snap :fullscreen="true" :horizontal="true">
-    <div class="item" id="one"></div>
-    <div class="item" id="two"></div>
-    <div class="item" id="three"></div>
-    <div class="item" id="four"></div>
+    ...
   </vue-scroll-snap>
 </template>
 
-<script>
-  import VueScrollSnap from "vue-scroll-snap";
-
-  export default {
-    components: {VueScrollSnap},
-  };
-</script>
-
-<style>
-  #one {
-    background: #ecf0f1;
-  }
-
-  #two {
-    background: #2980b9;
-  }
-
-  #three {
-    background: #8e44ad;
-  }
-
-  #four {
-    background: #e74c3c;
-  }
-</style>
+<script>...</script>
+<style>/* No styling required. */</style>
 ```
 
 ### Props
