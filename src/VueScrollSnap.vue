@@ -1,5 +1,5 @@
 <template>
-    <div class="snap-container" :class="{'full': full, 'horizontal': horizontal }">
+    <div class="snap-container" :class="{'fullscreen': fullscreen, 'horizontal': horizontal }">
         <slot></slot>
     </div>
 </template>
@@ -8,9 +8,9 @@
     export default {
         name: "VueScrollSnap",
         props: {
-            full: {
+            fullscreen: {
                 type: Boolean,
-                default: true,
+                default: false,
                 required: false
             },
             horizontal: {
@@ -43,7 +43,7 @@
         scroll-snap-type: x mandatory;
     }
 
-    .snap-container.full {
+    .snap-container.fullscreen {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -56,12 +56,15 @@
         right: 0px;
     }
 
+    .snap-container.fullscreen.horizontal {
+        flex-direction: row;
+    }
+
     .item {
         scroll-snap-align: start;
     }
 
-    .snap-container.full > .item {
-        min-width: 100%;
+    .snap-container.fullscreen > .item {
         min-height: 100%;
         flex: 1;
     }
@@ -70,7 +73,7 @@
         scroll-snap-align: center;
     }
 
-    .snap-container.full.horizontal > .item {
+    .snap-container.fullscreen.horizontal > .item {
         scroll-snap-align: center;
         min-width: 100%;
         flex: 1;
