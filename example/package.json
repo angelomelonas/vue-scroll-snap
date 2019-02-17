@@ -1,0 +1,25 @@
+{
+  "name": "vue-scroll-snap-example",
+  "version": "0.1.0",
+  "author": "Angelo Melonas",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "devDependencies": {
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.2",
+    "vue-scroll-snap": "^0.1.2",
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "imports-loader": "^0.8.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 9"
+  ]
+}

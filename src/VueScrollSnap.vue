@@ -1,5 +1,5 @@
 <template>
-    <div class="snap-container" :class="{'fullscreen': fullscreen, 'horizontal': horizontal }">
+    <div class="scroll-snap-container" :class="{'fullscreen': fullscreen, 'horizontal': horizontal }">
         <slot></slot>
     </div>
 </template>
@@ -23,9 +23,10 @@
 </script>
 
 <style>
-    .snap-container {
+    .scroll-snap-container {
         display: block;
         overflow-y: scroll;
+        overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
         scroll-snap-points-y: repeat(100%);
         scroll-snap-destination: 0 0;
@@ -33,7 +34,7 @@
         scroll-snap-type: mandatory;
     }
 
-    .snap-container.horizontal {
+    .scroll-snap-container.horizontal {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -43,7 +44,7 @@
         scroll-snap-type: x mandatory;
     }
 
-    .snap-container.fullscreen {
+    .scroll-snap-container.fullscreen {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -54,9 +55,11 @@
         bottom: 0px;
         left: 0px;
         right: 0px;
+        min-width: 100%;
+        min-height: 100%;
     }
 
-    .snap-container.fullscreen.horizontal {
+    .scroll-snap-container.fullscreen.horizontal {
         flex-direction: row;
     }
 
@@ -64,16 +67,16 @@
         scroll-snap-align: start;
     }
 
-    .snap-container.fullscreen > .item {
+    .scroll-snap-container.fullscreen > .item {
         min-height: 100%;
         flex: 1;
     }
 
-    .snap-container.horizontal > .item {
+    .scroll-snap-container.horizontal > .item {
         scroll-snap-align: center;
     }
 
-    .snap-container.fullscreen.horizontal > .item {
+    .scroll-snap-container.fullscreen.horizontal > .item {
         scroll-snap-align: center;
         min-width: 100%;
         flex: 1;

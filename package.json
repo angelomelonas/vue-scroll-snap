@@ -17,5 +17,10 @@
   "homepage": "https://github.com/angelomelonas/vue-scroll-snap",
   "bugs": {
     "url": "https://github.com/angelomelonas/vue-scroll-snap/issues"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 9"
+  ]
 }

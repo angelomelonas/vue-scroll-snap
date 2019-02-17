@@ -42,7 +42,7 @@ There are three ways of using Vue Scroll Snap. They are outlined below.
     min-height: 500px;
   }
 
-  .snap-container {
+  .scroll-snap-container {
     height: 500px;
     width: 500px;
   }
@@ -129,9 +129,8 @@ There are three ways of using Vue Scroll Snap. They are outlined below.
     min-width: 500px;
   }
 
-  .snap-container {
+  .scroll-snap-container {
     height: 500px;
-    /*width: 500px;*/
   }
   
   #one {
@@ -191,8 +190,6 @@ There are three ways of using Vue Scroll Snap. They are outlined below.
 ```
 
 ### Props
-
-#### fullscreen
 
 ## Optional Props
 | Prop          | Type          | Default       |
