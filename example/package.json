@@ -8,6 +8,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "src/VueScrollSnap.vue"
+  ],
   "devDependencies": {
     "vue": "^2.6.6",
     "vue-router": "^3.0.2",
