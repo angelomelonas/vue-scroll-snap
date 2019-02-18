@@ -11,6 +11,7 @@
     import VueScrollSnap from "vue-scroll-snap";
 
     export default {
+      name: "FullscreenHorizontal",
         components: {VueScrollSnap}
     };
 </script>

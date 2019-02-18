@@ -26,6 +26,5 @@ export default new Router({
       name: "horizontal",
       component: () => import("./components/Horizontal.vue")
     }
-
   ]
 });

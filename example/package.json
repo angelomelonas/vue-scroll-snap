@@ -8,14 +8,39 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "devDependencies": {
-    "vue": "^2.6.6",
+  "dependencies": {
+    "vue": "^2.5.22",
     "vue-router": "^3.0.2",
-    "vue-scroll-snap": "^0.1.4",
+    "vue-scroll-snap": "^0.1.4"
+  },
+  "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
-    "imports-loader": "^0.8.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "browserslist": [
     "> 1%",
