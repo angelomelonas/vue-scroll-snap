@@ -32,7 +32,7 @@
         scroll-snap-destination: 0 0;
         scroll-snap-type: y mandatory;
         scroll-snap-type: mandatory;
-        scroll-behaviour: smooth;
+        scroll-behavior: smooth;
     }
 
     .scroll-snap-container.horizontal {
