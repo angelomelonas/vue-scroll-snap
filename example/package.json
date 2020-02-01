@@ -11,7 +11,7 @@
   "dependencies": {
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
-    "vue-scroll-snap": "^0.1.6"
+    "vue-scroll-snap": "^0.1.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
