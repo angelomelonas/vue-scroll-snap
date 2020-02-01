@@ -103,7 +103,6 @@ There are four ways of using Vue Scroll Snap. They are described below. For more
 | ------------- |:-------------:|:-------------:|
 | fullscreen    | Boolean       | false         |
 | horizontal    | Boolean       | false         |
-Enables horizontal scrolling.
 
 ### License
 MIT
