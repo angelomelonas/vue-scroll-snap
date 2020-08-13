@@ -1,6 +1,6 @@
 {
   "name": "vue-scroll-snap-example",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "author": "Angelo Melonas",
   "license": "MIT",
   "scripts": {
@@ -10,18 +10,18 @@
   },
   "dependencies": {
     "vue": "^2.6.11",
-    "vue-router": "^3.1.5",
-    "vue-scroll-snap": "^0.1.7"
+    "vue-router": "^3.4.3",
+    "vue-scroll-snap": "^0.1.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
-    "@vue/cli-service": "^3.8.4",
+    "@vue/cli-service": "^4.5.3",
     "@vue/eslint-config-prettier": "^4.0.1",
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-vue": "^5.2.3",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
