@@ -1,6 +1,6 @@
 {
   "name": "vue-scroll-snap-example",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "author": "Angelo Melonas",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "vue": "^2.6.12",
     "vue-router": "^3.4.3",
-    "vue-scroll-snap": "^0.1.8"
+    "vue-scroll-snap": "^0.1.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
