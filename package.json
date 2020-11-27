@@ -1,7 +1,7 @@
 {
   "name": "vue-scroll-snap",
   "description": "A super simple Vue component that allows fullscreen and horizontal scroll snapping.",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "src/VueScrollSnap.vue",
   "repository": {
     "type": "git",
