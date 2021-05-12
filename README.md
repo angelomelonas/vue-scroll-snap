@@ -101,8 +101,8 @@ There are four ways of using Vue Scroll Snap. They are described below. For more
 ## Optional Props
 | Prop          | Type          | Default       |
 | ------------- |:-------------:|:-------------:|
-| fullscreen    | Boolean       | false         |
-| horizontal    | Boolean       | false         |
+| `fullscreen`    | Boolean       | `false`         |
+| `horizontal`    | Boolean       | `false`         |
 
 ### License
 MIT
